@@ -6,16 +6,135 @@
   </head>
   <body>
     <header class="main-header">
+
       <nav class="main-navigation">
         <a class="main-header-logo">
-          <img src="" alt="Логотип GllacyShop">
+          <img src="img/index-logo.svg" width="154" height="64" alt="Логотип GllacyShop">
         </a>
         <ul class="site-navigation">
           <li>Каталог</li>
           <li>Доставка и оплата</li>
           <li>О Компании</li>
         </ul>
+        <ul class="user-navigation">
+          <li class="user-navigation-search">Поиск</li>      <!-- Это будет форма -->
+          <li><a class="login-link" href="login.html">Вход</a></li>
+          <li class="user-navigation-cart">Корзина</li>      <!-- Пока не знаю что это.. какая-то форма -->
+        </ul>
       </nav>
+
+      <div class="navigation-time">
+        <p class="open-time">С 10 до 20, ежедневно</p>
+        <p class="phone">8 812 450-25-25</p>
+      </div>
     </header>
+    <main>
+
+      <h1 class="visually-hidden">GllacyShop</h1>
+
+      <section class="main-slider">
+        <h2 class="visually-hidden">Слайдер</h2>
+        <!-- Тут должен быть слайдер, который переключает фон -->
+        <img src="/img/slider-1-1.svg" width="372" height="584" alt="Крем-брюле">
+        <img src="/img/slider-1-2.svg" width="333" height="519" alt="Пломбир с малиновым джемом">
+        <span class="button">Давайте оба!</span>     <!-- Это будет кнопка -->
+      </section>
+
+      <div class="banner-1">
+        <h2>Малинка даром!</h2>
+        <p>При покупке 2 кг любого фруктового мороженого, добавим в ваш заказ банку
+          малинового варенья бесплатно.</p>
+        <a class="button" href="catalog.html">Хочу варенье!</a>
+      </div>
+
+      <div class="banner-2">
+        <h2>Шоколадки даром!</h2>
+        <p>При покупке 2 кг пломбира, добавим в ваш заказ упаковку вкуснейшей
+          шоколадной присыпки совершенно бесплатно.</p>
+        <a class="button" href="catalog.html">Хочу шоколадки!</a>
+      </div>
+
+      <section class="main-gallery">
+        <h2 class="visually-hidden">Хиты</h2>
+
+      </section>
+
+      <section class="main-features">
+        <h2 class="visually-hidden">Особенности</h2>
+        <h3>Магазин Глейси - это онлайн- и офлайн-магазин по продаже мороженого
+          собственного производства на развес</h3>
+        <table>
+          <tr>
+            <td class="features-item">Все наше мороженое изготавливается на собственном производстве, с
+              использованием современного оборудования и проверенных временем технологий.</td>
+            <td class="features-item">Закупка ингредиентов производится только у проверенных фермерских хозяйств
+              и компаний, с которыми нас связывает долговременное сотрудничество.</td>
+          </tr>
+          <tr>
+            <td class="features-item">Для приготовления мороженого используются настоящие сливки и молоко
+              высочайшего качества. Все дополнительные ингредиенты и добавки произведены
+              из натурального, экологически чистого сырья.</td>
+            <td class="features-item">Доставка нашего мороженого до заказчика осуществляется в специальном
+              термопаке, который не дает мороженому растаять в пути и позволяет сохранить
+              превосходный вкус.</td>
+          </tr>
+        </table>
+      </section>
+
+      <article class="main-blog-preview">
+        <h2>Новое в нашем блоге</h2>
+        <a href="blog.html">10 способов сервировки фруктовых щербетов к столу</a>
+      </article>
+
+      <section class="main-subscription">
+        <h2 class="visually-hidden">Подписка</h2>
+        <p>Подпишитесь на нашу сладкую рассылку и будете всегда в курсе всего самого вкусного, что у нас
+          происходит. Обещаем не спамить и не слать всякой ненужной ерунды. Честно =)</p>
+        <!-- Тут будет форма -->
+        <!-- Тут будет кнопка -->
+      </section>
+
+      <!-- Тут будет карта -->
+      <div class="main-map-adress">
+        <p>
+          Адресс главного офиса и офлайн магазина:<br>
+          <strong>ул. Большая Конюшенная<br>
+          19/8, Санкт-Петербург</strong>
+        </p>
+        <p>
+          Для заказов по телефону:<br>
+          <strong>8 812 450-25-25</strong><br>
+          (с 10 до 20 ежедневно)
+        </p>
+        <a class="button" href="contacts.html">Форма обратной связи</a>
+      </div>
+
+    </main>
+    <footer class="main-footer">
+      <div class="footer-social">
+        <ul>
+          <li><a class="social-button" href="#">Twitter</a></li>
+          <li><a class="social-button" href="#">Instagram</a></li>
+          <li><a class="social-button" href="#">Facebook</a></li>
+          <li><a class="social-button" href="#">ВКонтакте</a></li>
+        </ul>
+      </div>
+      <div class="footer-info">
+        <ul>
+          <li><a class="info-link" href="#">Для поставщиков</a></li>
+          <li><a class="info-link" href="#">О производстве</a></li>
+          <li><a class="info-link" href="#">Наши документы</a></li>
+          <li><a class="info-link" href="#">Экологические стандарты</a></li>
+        </ul>
+      </div>
+      <div class="footer-copyright">
+        <a class="copyright-logo">
+          <img src="img/logo-htmlacademy.svg" width="108" height="39" alt="Логотип HTML Academy">
+        </a>
+        <p class="copyright-info">
+          Сделано в <a href="https://htmlacademy.ru/"> HTML Academy</a> &copy; 2017
+        </p>
+      </div>
+    </footer>
   </body>
 </html>
