@@ -12,9 +12,19 @@
           <img src="img/index-logo.svg" width="154" height="64" alt="Логотип GllacyShop">
         </a>
         <ul class="site-navigation">
-          <li>Каталог</li>
-          <li>Доставка и оплата</li>
-          <li>О Компании</li>
+          <li>
+            <a href="catalog.html">Каталог</a>
+            <ul class="catalog-navigation">
+              <li><a href="catalog-new.html"><b>Новинки</b></a></li>
+              <li><a href="catalog-cream.html">Сливочное</a></li>
+              <li><a href="catalog-sorbet.html">Щербеты</a></li>
+              <li><a href="catalog-ice.html">Фруктовый лед</a></li>
+              <li><a href="catalog-other.html">Мелорин</a></li>
+            </ul>
+
+          </li>
+          <li><a href="delivery.html">Доставка и оплата</a></li>
+          <li><a href="about.html">О Компании</a></li>
         </ul>
         <ul class="user-navigation">
           <li class="user-navigation-search">Поиск</li>      <!-- Это будет форма -->
@@ -159,5 +169,16 @@
         </p>
       </div>
     </footer>
+<!-- Дальше идут всплывающие окна -->
+    <section class="modal modal-login">
+      <h2 class="visually-hidden">Войти</h2>
+      <a href="#">Забыли пароль?</a>
+      <a href="#">Новая регистрация</a>
+    </section>
+
+    <section class="modal modal-feedback">
+      <h2>Мы обязательно вам ответим!</h2>
+    </section>
+
   </body>
 </html>
