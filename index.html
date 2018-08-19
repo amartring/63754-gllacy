@@ -9,11 +9,11 @@
 
       <nav class="main-navigation">
         <a class="main-header-logo">
-          <img src="img\logo-gllacy.svg" width="154" height="64" alt="Логотип GllacyShop">
+          <img src="img/logo-gllacy.svg" width="154" height="64" alt="Логотип GllacyShop">
         </a>
         <ul class="site-navigation">
           <li>
-            <a href="catalog.html">Каталог</a>
+            <a href="catalog.html" class="nav-batton">Каталог</a>
             <ul class="catalog-navigation">
               <li><a href="catalog-new.html">Новинки</a></li>
               <li><a href="catalog.html">Сливочное</a></li>
@@ -26,9 +26,17 @@
           <li><a href="about.html">О Компании</a></li>
         </ul>
         <ul class="user-navigation">
-          <li class="user-navigation-search">Поиск</li>      <!-- Это будет форма -->
-          <li><a class="login-link" href="login.html">Вход</a></li>
-          <li class="user-navigation-cart">Корзина</li>      <!-- Пока не знаю что это.. какая-то форма -->
+          <li class="user-nav-search"><span class="nav-button search-icon">Поиск</span>
+
+            <form class="search" method="get" action="https://echo.htmlacademy.ru">
+              <label class="visually-hidden">Что ищем?
+                <input type="search" class="nav-form search-form" name="search" id="search" placeholder="Что ищем?">
+              </label>
+            </form>
+
+          </li>
+          <li><a class="nav-batton login-link" href="login.html">Вход</a></li>
+          <li class="nav-batton user-nav-cart">Корзина</li>      <!-- Пока не знаю что это.. какая-то форма -->
         </ul>
       </nav>
 
@@ -91,7 +99,7 @@
               </a>
             </h3>
             <p class="catalog-item-image">
-              <img src="img\product-1.jpg" width="267" height="267" alt="Сливочное с апельсиновым
+              <img src="img/product-1.jpg" width="267" height="267" alt="Сливочное с апельсиновым
                 джемом и цитрусовой стружкой">
             </p>
             <p class="catalog-item-price">
@@ -105,7 +113,7 @@
               </a>
             </h3>
             <p class="catalog-item-image">
-              <img src="img\product-2.jpg" width="267" height="267" alt="Сливочно-кофейное с
+              <img src="img/product-2.jpg" width="267" height="267" alt="Сливочно-кофейное с
                 кусочками шоколада">
             </p>
             <p class="catalog-item-price">
@@ -119,7 +127,7 @@
               </a>
             </h3>
             <p class="catalog-item-image">
-              <img src="img\product-3.jpg" width="267" height="267" alt="Сливочно-клубничное
+              <img src="img/product-3.jpg" width="267" height="267" alt="Сливочно-клубничное
                 с присыпкой из белого шоколада">
             </p>
             <p class="catalog-item-price">
@@ -133,7 +141,7 @@
               </a>
             </h3>
             <p class="catalog-item-image">
-              <img src="img\product-4.jpg" width="267" height="267" alt="Сливочное крем-брюле
+              <img src="img/product-4.jpg" width="267" height="267" alt="Сливочное крем-брюле
                 с карамельной подливкой">
             </p>
             <p class="catalog-item-price">
@@ -179,13 +187,17 @@
         <h2 class="visually-hidden">Подписка</h2>
         <p>Подпишитесь на нашу сладкую рассылку и будете всегда в курсе всего самого вкусного, что у нас
           происходит. Обещаем не спамить и не слать всякой ненужной ерунды. Честно =)</p>
-        <!-- Тут будет форма -->
-        <!-- Тут будет кнопка -->
+        <form class="login" method="get" action="https://echo.htmlacademy.ru">
+          <label class="visually-hidden">Адресс электронной почты
+            <input type="email" class="nav-form subscription-form" name="subscription" placeholder="Электронная почта" required>
+          </label>
+          <button class="button subscription-button">Отправить</button>
+        </form>
       </section>
 
       <section class="main-map">
         <h2 class="visually-hidden">Карта</h2>
-        <img src="img\map.jpg" width="1250" height="430" alt="Карта">
+        <img src="img/map.jpg" width="1250" height="430" alt="Карта">
         <div class="main-map-info">
           <p class="map-info-adress">
             Адресс главного офиса и офлайн магазина:<br>
@@ -220,7 +232,7 @@
 
       <div class="footer-copyright">
         <a class="copyright-logo" href="https://htmlacademy.ru/intensive/htmlcss">
-          <img src="img\logo-htmlacademy-small.svg" width="108" height="39" alt="Логотип HTML Academy">
+          <img src="img/logo-htmlacademy-small.svg" width="108" height="39" alt="Логотип HTML Academy">
         </a>
         <p class="copyright-info">
           Сделано в <a href="https://htmlacademy.ru/intensive/htmlcss"> HTML Academy</a> &copy; 2017
@@ -228,14 +240,49 @@
       </div>
     </footer>
 <!-- Дальше идут всплывающие окна -->
-    <section class="login-form">
+    <section class="nav-form login-form">
       <h2 class="visually-hidden">Войти</h2>
-      <a href="#">Забыли пароль?</a>
-      <a href="#">Новая регистрация</a>
+      <form class="login" method="get" action="https://echo.htmlacademy.ru">
+        <p>
+          <label class="visually-hidden">Логин
+            <input type="email" class="nav-form login-form" name="login" placeholder="Электронная почта" required>
+          </label>
+        </p>
+        <p>
+          <label class="visually-hidden">Пароль
+            <input type="password" class="nav-form password-form" name="password" placeholder="Пароль" required>
+          </label>
+        </p>
+        <p class="login-password-info">
+          <button class="button login-button">Войти</button>
+          <a href="#">Забыли пароль?</a>
+          <a href="#">Новая регистрация</a>
+        <p>
+      </form>
     </section>
 
-    <section class="modal modal-feedback">
+    <section class="modal-feedback">
       <h2>Мы обязательно вам ответим!</h2>
+      <form class="feedback" method="post" action="https://echo.htmlacademy.ru">
+        <p>
+          <label class="visually-hidden">Имя
+            <input type="text" class="nav-form name-form" name="login" placeholder="Как вас зовут?" required>
+          </label>
+        </p>
+        <p>
+          <label class="visually-hidden">Адресс электронной почты
+            <input type="email" class="nav-form password-form" name="password" placeholder="Ваша почта для ответа?" required>
+          </label>
+        </p>
+        <p>
+          <label class="visually-hidden">Текст сообщения
+            <textarea class="nav-form question-form" name="question">
+              Напишите что-нибудь...
+            </textarea>
+          </label>
+        </p>
+        <button class="button feedback-button">Отправить</button>
+      </form>
     </section>
 
   </body>
