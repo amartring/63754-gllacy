@@ -7,7 +7,6 @@
   <body>
 
     <header class="main-header">
-
       <nav class="main-navigation">
         <a class="main-header-logo" href="index.html">
           <img src="img/logo-gllacy.svg" width="154" height="64" alt="Логотип GllacyShop">
@@ -37,7 +36,9 @@
           <li class="user-navigation-cart">Корзина
             <table class="cart-contents">
               <tr>
-                <td class="delete-button">X</td>
+                <td>
+                  <button class="delete-button" type="button">Удалить</button>
+                </td>
                 <td>
                   <img src="img/product-1-small.jpg" width="33" height="33" alt="Пломбир с апельсиновым
                     джемом">
@@ -47,7 +48,9 @@
                 <td>300 руб.</td>
               </tr>
               <tr>
-                <td class="delete-button">X</td>
+                <td>
+                  <button class="delete-button" type="button">Удалить</button>
+                </td>
                 <td>
                   <img src="img/product-3-small.jpg" width="33" height="33" alt="Клубничный пломбир с
                     присыпкой из белого шоколада">
@@ -105,22 +108,22 @@
             <ul>
               <li class="filter-option">
                 <input class="visually-hidden filter-input filter-input-radio" type="radio"
-                  name="fat-content" value="zero" id="fat-zero">
+                  name="fat-content" value="0" id="fat-zero">
                 <label for="fat-zero">0%</label>
               </li>
               <li class="filter-option">
                 <input class="visually-hidden filter-input filter-input-radio" type="radio"
-                  name="fat-content" value="ten" id="fat-ten" checked>
+                  name="fat-content" value="<10" id="fat-ten" checked>
                 <label for="fat-ten">до 10%</label>
               </li>
               <li class="filter-option">
                 <input class="visually-hidden filter-input filter-input-radio" type="radio"
-                  name="fat-content" value="thirty" id="fat-thirty">
+                  name="fat-content" value="<30" id="fat-thirty">
                 <label for="fat-thirty">до 30%</label>
               </li>
               <li class="filter-option">
                 <input class="visually-hidden filter-input filter-input-radio" type="radio"
-                  name="fat-content" value="more" id="fat-more">
+                  name="fat-content" value=">30" id="fat-more">
                 <label for="fat-more">выше 30%</label>
               </li>
             </ul>
@@ -364,7 +367,7 @@
       </div>
 
       <div class="footer-copyright">
-        <a class="copyright-logo">
+        <a class="copyright-logo" href="https://htmlacademy.ru/intensive/htmlcss">
           <img src="img/logo-htmlacademy-small.svg" width="108" height="39" alt="Логотип HTML Academy">
         </a>
         <p class="copyright-info">
