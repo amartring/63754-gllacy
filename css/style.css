@@ -1,0 +1,420 @@
+body {
+  margin: 0;
+  padding: 0;
+
+  font-family: "Roboto", Arial, sans-serif;
+  font-size: 16px;
+  line-height: 22px;
+  font-weight: 700;
+  color: #ffffff;
+
+  background-color: #849d8f;
+}
+
+.main-navigation {
+  font-size: 16px;
+  line-height: 18px;
+}
+
+.site-navigation,
+.catalog-navigation {
+  list-style: none;
+}
+
+.site-navigation a,
+.user-navigation a {
+  color: #ffffff;
+  text-decoration: none;
+}
+
+.user-navigation {
+  font-size: 14px;
+  line-height: 16px;
+}
+
+.site-navigation a:hover,
+.site-navigation a:focus,
+.user-navigation a:hover,
+.user-navigation a:focus {
+  color: #333333;
+}
+
+.catalog-navigation {
+  font-weight: 400;
+  background-color: #f8f7f4;
+}
+
+.catalog-navigation li:first-child {
+  font-weight: 700;
+}
+
+.catalog-navigation a {
+  font-size: 14px;
+  line-height: 16px;
+  color: #323232;
+}
+
+.catalog-navigation a:hover {
+  background-color: #fbded7;
+}
+
+.catalog-navigation a:focus {
+  background-color: #f6b5a5;
+}
+
+.search input {
+  font-size: 14px;
+  line-height: 24px;
+  color: #999999;
+
+  background-color: #ffffff;
+  border: 1px solid rgba(178, 178, 178, 0.52);
+}
+
+.search input:hover {
+  border: 2px solid rgba(154, 154, 154, 0.52);
+}
+
+.search input:focus {
+  border: 2px solid rgba(46, 136, 228, 0.52);
+}
+
+.navigation-info a{
+  color: #ffffff;
+  text-decoration: none;
+}
+
+.navigation-info-time {
+  font-size: 14px;
+  line-height: 16px;
+}
+
+.navigation-info-phone {
+  font-size: 22px;
+  line-height: 24px;
+}
+
+.main-slider ul {
+  list-style: none;
+}
+
+.slider-item {
+  font-size: 60px;
+  line-height: 61px;
+}
+
+.banner ul {
+  list-style: none;
+}
+
+.banner h3 {
+  font-size: 35px;
+  line-height: 41px;
+}
+
+.banner-item {
+  font-size: 18px;
+  line-height: 22px;
+}
+
+.raspberry {
+  background: url(../img/bck-raspberry.jpg) no-repeat;
+}
+
+.chocolate {
+  background: url(../img/bcg-chocolate.jpg) no-repeat;
+}
+
+.catalog ul {
+  list-style: none;
+}
+
+.catalog a {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 22px;
+  color: #ffffff;
+}
+
+.catalog a:focus,
+.catalog a:hover {
+  color: #ffbc9e;
+}
+
+.catalog-item-price {
+  font-size: 45px;
+  line-height: 45px;
+}
+
+.main-catalog-item:hover,
+.catalog-item:hover {
+  background-color: rgba(248, 247, 244, 0.2);
+  box-shadow: 0px 20px 20px 0 rgba(0, 0, 0, 0.4);
+}
+
+.main-features {
+  color: #323232;
+  font-weight: 400;
+
+  background: url(../img/bck-strawberry.jpg) no-repeat;
+}
+
+.main-features h3 {
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 30px;
+}
+
+.main-features ul {
+  list-style: none;
+}
+
+.main-blog-preview {
+  color: #323232;
+}
+
+.main-blog-preview h2 {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 22px;
+}
+
+.main-blog-preview a {
+  font-size: 24px;
+  line-height: 30px;
+  color: #323232;
+}
+
+.main-subscription {
+  font-weight: 400;
+  color: #5a5a5a;
+}
+
+.main-subscription input {
+  font-size: 16px;
+  line-height: 24px;
+  color: #999999;
+
+  background-color: #ffffff;
+}
+
+.main-map-info {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 20px;
+  color: #323232;
+
+  background-color: #ffffff;
+}
+
+.main-map-info span {
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 24px;
+}
+
+.cart-contents {
+  font-weight: 400;
+  font-size: 13px;
+  line-height: 16px;
+}
+
+.total-price {
+  font-weight: 700;
+  font-size: 15px;
+  line-height: 18px;
+}
+
+.breadcrumbs a {
+  font-weight: 400;
+  color: #ffffff;
+}
+
+.filters {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 18px;
+}
+
+.filter fieldset {
+  border: none;
+}
+
+.filters legend {
+  font-size: 14px;
+  line-height: 16px;
+}
+
+.filters ul {
+  list-style: none;
+}
+
+.filter-input:hover + label,
+.filter-input:focus + label {
+  color: #323232;
+}
+
+.sort {
+  font-size: 16px;
+  line-height: 18px;
+
+  border: none;
+}
+
+.breadcrumbs a:hover,
+.breadcrumbs a:focus {
+  color: #ffbc9e;
+}
+
+.breadcrumbs-current a {
+  text-decoration: none;
+}
+
+.pagination-list {
+  list-style: none;
+}
+
+.pagination-item a {
+  font-size: 16px;
+  line-height: 18px;
+  color: #ffffff;
+
+  text-decoration: none;
+
+}
+
+.pagination-item a:hover,
+.pagination-item a:focus {
+  background-color: rgba(248, 247, 244, 0.2);
+}
+
+.pagination-item a:active {
+  color: #323232;
+}
+
+.pagination-item-current a {
+  color: #323232;
+
+  background-color: #ffffff;
+}
+
+.pagination-item-current a:hover,
+.pagination-item-current a:focus,
+.pagination-item-current a:active {
+  color: #323232;
+
+  background-color: #ffffff;
+}
+
+.main-footer a {
+  font-weight: 400;
+  font-size: 13px;
+  line-height: 18px;
+  color: #ffffff;
+}
+
+.main-footer a:hover,
+.main-footer a:focus {
+  color: #ffbc9e;
+}
+
+.main-footer ul {
+  list-style: none;
+}
+
+.copyright-info {
+  font-size: 12px;
+  line-height: 18px;
+}
+
+.footer-info li:first-child a {
+  font-weight: 700;
+}
+
+
+/* ------------------ форма входа/регистрации ------------------ */
+
+.login input {
+  font-size: 14px;
+  line-height: 24px;
+  color: #999999;
+
+  background-color: #ffffff;
+  border: 1px solid rgba(178, 178, 178, 0.52);
+}
+
+.login input:hover {
+  border: 2px solid rgba(154, 154, 154, 0.52);
+}
+
+.login input:focus {
+  border: 2px solid rgba(46, 136, 228, 0.52);
+}
+
+.login-form a {
+  font-size: 13px;
+  line-height: 24px;
+  color: #323232;
+}
+
+.login-form a:hover,
+.login-form a:focus {
+  color: #e84d37;
+}
+
+/* ------------------ модальное окно ------------------ */
+
+.modal-feedback h2 {
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 28px;
+  color: #323232;
+}
+
+.feedback input,
+.feedback textarea {
+  font-size: 14px;
+  line-height: 24px;
+  color: #999999;
+
+  background-color: #ffffff;
+  border: 1px solid rgba(178, 178, 178, 0.52);
+}
+
+.feedback input:hover,
+.feedback textarea:hover {
+  border: 2px solid rgba(154, 154, 154, 0.52);
+}
+
+.feedback input:focus,
+.feedback textarea:focus {
+  border: 2px solid rgba(46, 136, 228, 0.52);
+}
+
+/* ------------------ кнопки ------------------ */
+
+.button {
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 24px;
+  vertical-align: middle;
+  color: #ffffff;
+
+  background-color: #e84d37;
+  border: none;
+  text-decoration: none;
+}
+
+a.button {
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 24px;
+  vertical-align: middle;
+  color: #ffffff;
+
+  background-color: #e84d37;
+}
+
+.button:hover {
+  background-color: #f07a63;
+}

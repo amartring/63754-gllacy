@@ -3,6 +3,9 @@
   <head>
     <meta charset="utf-8">
     <title>HTML Academy: Глейси</title>
+    <link href="https://fonts.googleapis.com/css?family=Roboto:400,500,700" rel="stylesheet">
+    <link href="css/normalize.css" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">
   </head>
   <body>
     <header class="main-header">
@@ -77,32 +80,30 @@
 
       <section class="banner">
         <h2 class="visually-hidden">Специальные предложения</h2>
-        <ul>
-          <li class="banner-item">
-            <h3>Малинка даром!</h3>
-            <p>При покупке 2 кг любого фруктового мороженого, добавим в ваш заказ банку
+        <div class="banner-item raspberry">
+          <h3>Малинка даром!</h3>
+          <p>При покупке 2 кг любого фруктового мороженого, добавим в ваш заказ банку
               малинового варенья бесплатно.</p>
               <a class="button" href="catalog.html">Хочу варенье!</a>
-          </li>
-          <li class="banner-item">
-            <h3>Шоколадки даром!</h3>
-            <p>При покупке 2 кг пломбира, добавим в ваш заказ упаковку вкуснейшей
+        </div>
+        <div class="banner-item chocolate">
+          <h3>Шоколадки даром!</h3>
+          <p>При покупке 2 кг пломбира, добавим в ваш заказ упаковку вкуснейшей
               шоколадной присыпки совершенно бесплатно.</p>
-              <a class="button" href="catalog.html">Хочу шоколадки!</a>
-          </li>
-        </ul>
+            <a class="button" href="catalog.html">Хочу шоколадки!</a>
+        </div>
       </section>
 
-      <section class="main-catalog">
+      <section class="catalog">
         <h2 class="visually-hidden">Хиты</h2>
         <ul>
-          <li class="catalog-item">
+          <li class="main-catalog-item">
             <h3>
               <a class="main-link" href="catalog.html">Сливочное с апельсиновым джемом и цитрусовой стружкой
               </a>
             </h3>
             <p class="catalog-item-image">
-              <img src="img/product-1.jpg" width="267" height="267" alt="Сливочное с апельсиновым
+              <img src="img/product-1.png" width="267" height="267" alt="Сливочное с апельсиновым
                 джемом и цитрусовой стружкой">
             </p>
             <p class="catalog-item-price">
@@ -110,13 +111,13 @@
             </p>
             <a class="button" href="#">Быстрый просмотр</a>
           </li>
-          <li class="catalog-item">
+          <li class="main-catalog-item">
             <h3>
               <a class="main-link" href="catalog.html">Сливочно-кофейное с кусочками шоколада
               </a>
             </h3>
             <p class="catalog-item-image">
-              <img src="img/product-2.jpg" width="267" height="267" alt="Сливочно-кофейное с
+              <img src="img/product-2.png" width="267" height="267" alt="Сливочно-кофейное с
                 кусочками шоколада">
             </p>
             <p class="catalog-item-price">
@@ -124,13 +125,13 @@
             </p>
             <a class="button" href="#">Быстрый просмотр</a>
           </li>
-          <li class="catalog-item">
+          <li class="main-catalog-item">
             <h3>
               <a class="main-link" href="catalog.html">Сливочно-клубничное с присыпкой из белого шоколада
               </a>
             </h3>
             <p class="catalog-item-image">
-              <img src="img/product-3.jpg" width="267" height="267" alt="Сливочно-клубничное
+              <img src="img/product-3.png" width="267" height="267" alt="Сливочно-клубничное
                 с присыпкой из белого шоколада">
             </p>
             <p class="catalog-item-price">
@@ -138,13 +139,13 @@
             </p>
             <a class="button" href="#">Быстрый просмотр</a>
           </li>
-          <li class="catalog-item">
+          <li class="main-catalog-item">
             <h3>
               <a class="main-link" href="catalog.html">Сливочное крем-брюле с карамельной подливкой
               </a>
             </h3>
             <p class="catalog-item-image">
-              <img src="img/product-4.jpg" width="267" height="267" alt="Сливочное крем-брюле
+              <img src="img/product-4.png" width="267" height="267" alt="Сливочное крем-брюле
                 с карамельной подливкой">
             </p>
             <p class="catalog-item-price">
@@ -157,8 +158,8 @@
 
       <section class="main-features">
         <h2 class="visually-hidden">Особенности</h2>
-        <p class="features-description">Магазин Глейси - это онлайн- и офлайн-магазин по продаже мороженого
-          собственного производства на развес</p>
+        <h3>Магазин Глейси - это онлайн- и офлайн-магазин по продаже мороженого
+          собственного производства на развес</h3>
         <ul>
           <li class="features-item">
             <p>Все наше мороженое изготавливается на собственном производстве, с
@@ -206,7 +207,7 @@
           <p class="map-info-adress">
             Адресс главного офиса и офлайн магазина:<br>
             <span>ул. Большая Конюшенная<br>
-              19/8, Санкт-Петербург</span>
+            19/8, Санкт-Петербург</span>
           </p>
           <p class="map-info-phone">
             Для заказов по телефону:<br>
@@ -243,7 +244,9 @@
         </p>
       </div>
     </footer>
-<!-- Дальше идут всплывающие окна -->
+
+    <!-- Всплывающие окна -->
+
     <section class="nav-form login-form">
       <h2 class="visually-hidden">Войти</h2>
       <form class="login" method="get" action="https://echo.htmlacademy.ru">
