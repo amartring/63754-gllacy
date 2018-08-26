@@ -10,49 +10,47 @@
   <body>
     <header class="main-header">
 
-      <nav class="main-navigation">
+      <nav class="main-navigation container">
         <a class="main-header-logo">
           <img src="img/logo-gllacy.svg" width="154" height="64" alt="Логотип GllacyShop">
         </a>
         <ul class="site-navigation">
           <li>
             <a href="catalog.html" class="nav-batton">Каталог</a>
-            <ul class="catalog-navigation">
+<!--          <ul class="catalog-navigation">
               <li><a href="catalog-new.html">Новинки</a></li>
               <li><a href="catalog.html">Сливочное</a></li>
               <li><a href="catalog-sorbet.html">Щербеты</a></li>
               <li><a href="catalog-ice.html">Фруктовый лед</a></li>
               <li><a href="catalog-other.html">Мелорин</a></li>
-            </ul>
+            </ul> -->
           </li>
           <li><a href="delivery.html">Доставка и оплата</a></li>
           <li><a href="about.html">О Компании</a></li>
         </ul>
         <ul class="user-navigation">
           <li class="user-nav-search"><span class="nav-button search-icon">Поиск</span>
-
-            <form class="search" method="get" action="https://echo.htmlacademy.ru">
-              <label class="visually-hidden">Что ищем?
-                <input type="search" class="nav-form search-form" name="search" id="search" placeholder="Что ищем?">
-              </label>
-            </form>
-
+<!--          <form class="search" method="get" action="https://echo.htmlacademy.ru">
+              <label class="visually-hidden" for="nav-search">Что ищем?</label>
+              <input type="search" class="nav-form search-form" name="nav-search" id="" id="nav-search" placeholder="Что ищем?">
+            </form> -->
           </li>
           <li><a class="nav-batton login-link" href="login.html">Вход</a></li>
           <li class="nav-batton user-nav-cart">Корзина</li>      <!-- Пока не знаю что это.. какая-то форма -->
         </ul>
-      </nav>
 
-      <div class="navigation-info">
+
+      <div class="navigation-info container">
         <p class="navigation-info-time">С 10 до 20, ежедневно</p>
         <a class="navigation-info-phone" href="tel:+78124502525">8 812 450-25-25</a>
       </div>
+      </nav>
     </header>
     <main>
 
       <h1 class="visually-hidden">GllacyShop</h1>
 
-      <section class="main-slider">
+      <section class="main-slider container">
         <h2 class="visually-hidden">Слайдер</h2>
         <!-- Тут должен быть слайдер, который переключает фон -->
         <ul>
@@ -61,40 +59,42 @@
               с малиновым джемом">-->
             <h3>Крем-брюле и пломбир с малиновым джемом</h3>
           </li>
-          <li class="slider-item">
+          <li class="slider-item visually-hidden">
 <!--        <img src="img\slider-2.png" width="1065" height="859" alt="Шоколадный пломбир и
               лимонный сорбет">-->
             <h3>Шоколадный пломбир и лимонный сорбет</h3>
           </li>
-          <li class="slider-item">
+          <li class="slider-item visually-hidden">
 <!--        <img src="img\slider-3.png" width="1079" height="854" alt="Пломбир с помадкой и
               клубничный щербет">-->
             <h3>Пломбир с помадкой и клубничный щербет</h3>
           </li>
         </ul>
-        <button class="slider-button" type="button">Первый слайд</button>
-        <button class="slider-button" type="button">Второй Слайд</button>
-        <button class="slider-button" type="button">Третий слайд</button>
-        <a class="button" href="catalog.html">Давайте оба!</a>
+        <div class="slider-button-conteiner">
+          <button class="slider-button" type="button">Первый слайд</button>
+          <button class="slider-button" type="button">Второй Слайд</button>
+          <button class="slider-button" type="button">Третий слайд</button>
+        </div>
+        <a class="button main-slider-button" href="catalog.html">Давайте оба!</a>
       </section>
 
-      <section class="banner">
+      <section class="banner container">
         <h2 class="visually-hidden">Специальные предложения</h2>
         <div class="banner-item raspberry">
           <h3>Малинка даром!</h3>
           <p>При покупке 2 кг любого фруктового мороженого, добавим в ваш заказ банку
               малинового варенья бесплатно.</p>
-              <a class="button" href="catalog.html">Хочу варенье!</a>
+              <a class="button banner-button" href="catalog.html">Хочу варенье!</a>
         </div>
         <div class="banner-item chocolate">
           <h3>Шоколадки даром!</h3>
           <p>При покупке 2 кг пломбира, добавим в ваш заказ упаковку вкуснейшей
               шоколадной присыпки совершенно бесплатно.</p>
-            <a class="button" href="catalog.html">Хочу шоколадки!</a>
+            <a class="button banner-button" href="catalog.html">Хочу шоколадки!</a>
         </div>
       </section>
 
-      <section class="catalog">
+      <section class="catalog container">
         <h2 class="visually-hidden">Хиты</h2>
         <ul>
           <li class="main-catalog-item">
@@ -156,7 +156,7 @@
         </ul>
       </section>
 
-      <section class="main-features">
+      <section class="main-features container">
         <h2 class="visually-hidden">Особенности</h2>
         <h3>Магазин Глейси - это онлайн- и офлайн-магазин по продаже мороженого
           собственного производства на развес</h3>
@@ -182,24 +182,23 @@
         </ul>
       </section>
 
-      <section class="main-blog-preview">
+      <section class="main-blog-preview container">
         <h2>Новое в нашем блоге</h2>
         <a href="blog.html">10 способов сервировки фруктовых щербетов к столу</a>
       </section>
 
-      <section class="main-subscription">
+      <section class="main-subscription container">
         <h2 class="visually-hidden">Подписка</h2>
         <p>Подпишитесь на нашу сладкую рассылку и будете всегда в курсе всего самого вкусного, что у нас
           происходит. Обещаем не спамить и не слать всякой ненужной ерунды. Честно =)</p>
         <form class="login" method="get" action="https://echo.htmlacademy.ru">
-          <label class="visually-hidden">Адресс электронной почты
-            <input type="email" class="nav-form subscription-form" name="subscription" placeholder="Электронная почта" required>
-          </label>
+          <label class="visually-hidden" for="subscription-email">Адресс электронной почты</label>
+          <input type="email" class="nav-form subscription-form" name="subscription-email" id="subscription-email" placeholder="Электронная почта" required>
           <button class="button subscription-button" type="button">Отправить</button>
         </form>
       </section>
 
-      <section class="main-map">
+      <section class="main-map container">
         <h2 class="visually-hidden">Карта</h2>
         <img src="img/map.jpg" width="1250" height="430" alt="Адрес главного офиса компании ул. Большая
           Конюшенная 19/8, Санкт-Петербург">
@@ -219,7 +218,7 @@
       </section>
 
     </main>
-    <footer class="main-footer">
+    <footer class="main-footer container">
 
       <ul class="footer-social">
         <li><a class="social-button" href="#">Twitter</a></li>
@@ -251,14 +250,12 @@
       <h2 class="visually-hidden">Войти</h2>
       <form class="login" method="get" action="https://echo.htmlacademy.ru">
         <p>
-          <label class="visually-hidden">Логин
-            <input type="email" class="nav-form login-form" name="login" placeholder="Электронная почта" required>
-          </label>
+          <label class="visually-hidden" for="login-login">Логин</label>
+          <input type="email" class="nav-form login-form" name="login" id="login-login" placeholder="Электронная почта" required>
         </p>
         <p>
-          <label class="visually-hidden">Пароль
-            <input type="password" class="nav-form password-form" name="password" placeholder="Пароль" required>
-          </label>
+          <label class="visually-hidden" for="login-password">Пароль</label>
+          <input type="password" class="nav-form password-form" name="password" id="login-password" placeholder="Пароль" required>
         </p>
         <p class="login-password-info">
           <button class="button login-button" type="button">Войти</button>
@@ -272,21 +269,18 @@
       <h2>Мы обязательно вам ответим!</h2>
       <form class="feedback" method="post" action="https://echo.htmlacademy.ru">
         <p>
-          <label class="visually-hidden">Имя
-            <input type="text" class="nav-form name-form" name="login" placeholder="Как вас зовут?" required>
-          </label>
+          <label class="visually-hidden" for="feedback-login">Имя</label>
+          <input type="text" class="nav-form name-form" name="login" id="feedback-login" placeholder="Как вас зовут?" required>
         </p>
         <p>
-          <label class="visually-hidden">Адресс электронной почты
-            <input type="email" class="nav-form password-form" name="password" placeholder="Ваша почта для ответа?" required>
-          </label>
+          <label class="visually-hidden" for="feedback-password">Адресс электронной почты</label>
+          <input type="email" class="nav-form password-form" name="password" id="feedback-password" placeholder="Ваша почта для ответа?" required>
         </p>
         <p>
-          <label class="visually-hidden">Текст сообщения
-            <textarea class="nav-form question-form" name="question">
-              Напишите что-нибудь...
-            </textarea>
-          </label>
+          <label class="visually-hidden" for="feedback-question">Текст сообщения</label>
+          <textarea class="nav-form question-form" name="question" id="feedback-question">
+            Напишите что-нибудь...
+          </textarea>
         </p>
         <button class="button feedback-button" type="button">Отправить</button>
         <button class="modal-close" type="button">Закрыть</button>

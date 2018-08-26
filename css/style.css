@@ -11,25 +11,45 @@ body {
   background-color: #849d8f;
 }
 
+.main-header {
+  margin-top: 9px;
+  margin-bottom: 280px;
+}
+
 .main-navigation {
+  display: flex;
   font-size: 16px;
   line-height: 18px;
+  flex-wrap: wrap;
+
+  margin: 0;
+  padding: 0;
 }
 
 .site-navigation,
-.catalog-navigation {
+.catalog-navigation,
+.user-navigation {
   list-style: none;
-}
 
-.site-navigation a,
-.user-navigation a {
-  color: #ffffff;
-  text-decoration: none;
+  margin: 0;
+  padding: 0;
 }
 
 .user-navigation {
   font-size: 14px;
   line-height: 16px;
+
+  width: 245px;
+  margin-left: auto;
+
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.user-navigation a {
+  color: #ffffff;
+  text-decoration: none;
 }
 
 .site-navigation a:hover,
@@ -37,6 +57,24 @@ body {
 .user-navigation a:hover,
 .user-navigation a:focus {
   color: #333333;
+}
+
+.main-header-logo {
+  width: 154px;
+  height: 64px;
+}
+
+.site-navigation {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-left: 24px;
+
+  width: 349px;
+}
+
+.site-navigation a {
+  color: #ffffff;
 }
 
 .catalog-navigation {
@@ -79,7 +117,17 @@ body {
   border: 2px solid rgba(46, 136, 228, 0.52);
 }
 
-.navigation-info a{
+.navigation-info {
+  display: flex;
+  flex-direction: column;
+}
+
+.navigation-info a,
+.navigation-info p {
+  margin-left: auto;
+}
+
+.navigation-info a {
   color: #ffffff;
   text-decoration: none;
 }
@@ -94,13 +142,48 @@ body {
   line-height: 24px;
 }
 
-.main-slider ul {
-  list-style: none;
+.main-slider {
+  display: flex;
+  flex-wrap: wrap;
+
 }
 
-.slider-item {
+.main-slider h3 {
   font-size: 60px;
-  line-height: 61px;
+  line-height: 60px;
+
+  width: 670px;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+}
+
+.main-slider ul {
+  list-style: none;
+  width: 100%;
+}
+
+.main-slider-button {
+  width: 280px;
+  height: 64px;
+  
+  margin-bottom: 41px;
+}
+
+.banner {
+  display: flex;
+  justify-content: space-between;
+}
+
+.banner-item {
+  font-size: 18px;
+  line-height: 22px;
+
+  flex-basis: 520px;
+  padding: 20px;
+
+  display: flex;
+  flex-direction: column;
 }
 
 .banner ul {
@@ -110,11 +193,13 @@ body {
 .banner h3 {
   font-size: 35px;
   line-height: 41px;
+
+  margin: 0;
+  padding: 0;
 }
 
-.banner-item {
-  font-size: 18px;
-  line-height: 22px;
+.banner-button {
+  width: 165px;
 }
 
 .raspberry {
@@ -331,6 +416,16 @@ body {
   font-weight: 700;
 }
 
+.visually-hidden {
+  display: none;
+}
+
+/* ------------------ центровщик ------------------ */
+
+.container {
+  width: 1146px;
+  margin: 0 auto;
+}
 
 /* ------------------ форма входа/регистрации ------------------ */
 
