@@ -509,6 +509,7 @@ body.catalog-page {
 .catalog,
 .catalog-item {
   margin-bottom: 40px;
+  /* z-index: 10; */
 }
 
 .catalog-list {
@@ -582,6 +583,7 @@ body.catalog-page {
 .catalog-item:hover::after {
   background-color: rgba(248, 247, 244, 0.2);
   box-shadow: 0px 20px 20px 0 rgba(0, 0, 0, 0.4);
+  z-index: 1;
 }
 
 .catalog-item-price {
