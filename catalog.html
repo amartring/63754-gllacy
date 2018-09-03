@@ -15,11 +15,11 @@
             <img src="img/logo-gllacy.svg" width="154" height="64" alt="Логотип GllacyShop">
           </a>
           <ul class="site-navigation">
-            <li>
+            <li class="site-navigation-catalog">
               <a class="navigation-button navigation-button-current">Каталог</a>
-              <ul class="catalog-navigation visually-hidden">
+              <ul class="catalog-navigation">
                 <li><a href="catalog-new.html">Новинки</a></li>
-                <li><a href="catalog.html">Сливочное</a></li>
+                <li class="current"><a>Сливочное</a></li>
                 <li><a href="catalog-sorbet.html">Щербеты</a></li>
                 <li><a href="catalog-ice.html">Фруктовый лед</a></li>
                 <li><a href="catalog-other.html">Мелорин</a></li>
@@ -62,10 +62,41 @@
                 </svg>
               </a>
             </li>
-            <li>
+            <li class="user-navigation-cart">
               <a class="user-navigation-button cart-batton" href="#">
                 <span class="visually-hidden">Корзина</span>2 товара
               </a>
+              <div class="cart">
+                <table class="cart-contents">
+                  <tr>
+                    <td>
+                      <button class="delete-button" type="button"><span class="visually-hidden">Удалить</span></button>
+                    </td>
+                    <td>
+                      <img src="img/product-1-small.png" width="33" height="33" alt="Пломбир с апельсиновым
+                        джемом">
+                    </td>
+                    <td>Пломбир с апельсиновым джемом</td>
+                    <td>1,5 кг х <span class="cart-price">200 руб.</span></td>
+                    <td>300 руб.</td>
+                  </tr>
+                  <tr>
+                    <td>
+                      <button class="delete-button" type="button"><span class="visually-hidden">Удалить</span></button>
+                    </td>
+                    <td>
+                      <img src="img/product-3-small.png" width="33" height="33" alt="Клубничный пломбир с
+                        присыпкой из белого шоколада">
+                    </td>
+                    <td>Клубничный пломбир с присыпкой из белого шоколада
+                    </td>
+                    <td>1,5 кг х <span class="cart-price">300 руб.</span></td>
+                    <td>450 руб.</td>
+                  </tr>
+                </table>
+                <p class="total-price">Итого: 750 руб.</p>
+                <a class="button cart-close-button" href="#">Оформить заказ</a>
+              </div>
             </li>
           </ul>
         </nav>
@@ -411,39 +442,5 @@
           </p>
         </div>
       </footer>
-
-      <!-- -Товары в корзине -->
-
-      <table class="cart-contents">
-        <tr>
-          <td>
-            <button class="delete-button" type="button">Удалить</button>
-          </td>
-          <td>
-            <img src="img/product-1-small.png" width="33" height="33" alt="Пломбир с апельсиновым
-              джемом">
-          </td>
-          <td>Пломбир с апельсиновым джемом</td>
-          <td>1,5 кг х <span class="cart-price">200 руб.</span></td>
-          <td>300 руб.</td>
-        </tr>
-        <tr>
-          <td>
-            <button class="delete-button" type="button">Удалить</button>
-          </td>
-          <td>
-            <img src="img/product-3-small.png" width="33" height="33" alt="Клубничный пломбир с
-              присыпкой из белого шоколада">
-          </td>
-          <td>Клубничный пломбир с присыпкой из белого шоколада
-          </td>
-          <td>1,5 кг х <span class="cart-price">300 руб.</span></td>
-          <td>450 руб.</td>
-        </tr>
-        <tr>
-          <td class="total-price" colspan="5">Итого: 750 руб.</td>
-        </tr>
-      </table>
-      <a class="button cart-button" href="#">Оформить заказ</a>
   </body>
 </html>
