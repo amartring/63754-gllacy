@@ -36,7 +36,7 @@
           </ul>
 
           <ul class="user-navigation">
-            <li>
+            <li class="navigation-item-search">
               <a class="user-navigation-button search-button" href="#">
                 <span class="visually-hidden">Поиск</span>
                 <svg class="search-button-img" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="17px"
@@ -47,12 +47,14 @@
                 </g>
                 </svg>
               </a>
-<!--          <form class="search" method="get" action="https://echo.htmlacademy.ru">
-                <label class="visually-hidden" for="nav-search">Что ищем?</label>
-                <input type="search" class="nav-form search-form" name="nav-search" id="" id="nav-search" placeholder="Что ищем?">
-              </form> -->
+              <div class="navigation-search-form">
+                <form class="search" method="get" action="https://echo.htmlacademy.ru">
+                  <label class="visually-hidden" for="nav-search">Что ищем?</label>
+                  <input type="search" class="nav-form search-form" name="nav-search" id="nav-search" placeholder="Что ищем?">
+                </form>
+              </div>
             </li>
-            <li>
+            <li class="navigation-item-login">
               <a class="user-navigation-button login-batton" href="#">Вход
                 <svg class="login-button-img" version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
                 	 width="21px" height="19px" viewBox="0 0 21 19" enable-background="new 0 0 21 19" xml:space="preserve">
@@ -61,6 +63,22 @@
                 		/>
                 </svg>
               </a>
+              <section class="navigation-login-form">
+                <h2 class="visually-hidden">Войти</h2>
+                <form class="login" method="get" action="https://echo.htmlacademy.ru">
+                  <label class="visually-hidden" for="login-login">Логин</label>
+                  <input type="email" class="nav-form login-form" name="login" id="login-login" placeholder="Электронная почта" required>
+
+                  <label class="visually-hidden" for="login-password">Пароль</label>
+                  <input type="password" class="nav-form password-form" name="password" id="login-password" placeholder="Пароль" required>
+
+                  <button class="button login-button" type="button">Войти</button>
+                  <p class="login-password-info">
+                    <a href="#">Забыли пароль?</a>
+                    <a href="#">Новая регистрация</a>
+                  <p>
+                </form>
+              </section>
             </li>
             <li>
               <a class="user-navigation-button cart-batton" href="#">
@@ -265,7 +283,6 @@
               		 M23.955,21.698c0,1.254-1.025,2.279-2.279,2.279H10.279C9.026,23.978,8,22.952,8,21.698V10.302c0-1.253,1.026-2.279,2.279-2.279
               		h11.396c1.254,0,2.279,1.026,2.279,2.279V21.698z"/>
               </svg>
-
             </a>
           </li>
           <li>
@@ -315,7 +332,7 @@
 
         <div class="footer-copyright">
           <a class="copyright-logo" href="https://htmlacademy.ru/intensive/htmlcss">
-            <img src="img/logo-htmlacademy-small.svg" width="108" height="39" alt="Логотип HTML Academy">
+            <img src="img/logo-htmlacademy-small.png" width="108" height="39" alt="Логотип HTML Academy">
           </a>
           <p class="copyright-info">
             Сделано в <a href="https://htmlacademy.ru/intensive/htmlcss">HTML Academy</a> &copy; 2017
@@ -324,25 +341,6 @@
       </footer>
 
     <!-- Всплывающие окна -->
-
-      <section class="nav-form login-form">
-        <h2 class="visually-hidden">Войти</h2>
-        <form class="login" method="get" action="https://echo.htmlacademy.ru">
-          <p>
-            <label class="visually-hidden" for="login-login">Логин</label>
-            <input type="email" class="nav-form login-form" name="login" id="login-login" placeholder="Электронная почта" required>
-          </p>
-          <p>
-            <label class="visually-hidden" for="login-password">Пароль</label>
-            <input type="password" class="nav-form password-form" name="password" id="login-password" placeholder="Пароль" required>
-          </p>
-          <p class="login-password-info">
-            <button class="button login-button" type="button">Войти</button>
-            <a href="#">Забыли пароль?</a>
-            <a href="#">Новая регистрация</a>
-          <p>
-        </form>
-      </section>
 
       <section class="modal-feedback">
         <h2>Мы обязательно вам ответим!</h2>
@@ -357,14 +355,13 @@
           </p>
           <p>
             <label class="visually-hidden" for="feedback-question">Текст сообщения</label>
-            <textarea class="nav-form question-form" name="question" id="feedback-question">
-              Напишите что-нибудь...
-            </textarea>
+            <textarea class="nav-form question-form" name="question" id="feedback-question" placeholder="Напишите что-нибудь..."></textarea>
           </p>
           <button class="button feedback-button" type="button">Отправить</button>
           <button class="modal-close" type="button">Закрыть</button>
         </form>
       </section>
+      <div class="modal-overlay"></div>
     </div>
   </body>
 </html>

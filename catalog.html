@@ -34,7 +34,7 @@
           </ul>
 
           <ul class="user-navigation">
-            <li>
+            <li class="navigation-item-search">
               <a class="user-navigation-button search-button" href="#">
                 <span class="visually-hidden">Поиск</span>
                 <svg class="search-button-img" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="17px"
@@ -45,14 +45,14 @@
                 </g>
                 </svg>
               </a>
-
-<!--          <form class="search" method="get" action="https://echo.htmlacademy.ru">
-                <label class="visually-hidden" for="nav-search">Что ищем?</label>
-                <input type="search" class="nav-form search-form" name="nav-search" id="" id="nav-search" placeholder="Что ищем?">
-              </form> -->
-
+              <div class="navigation-search-form">
+                <form class="search" method="get" action="https://echo.htmlacademy.ru">
+                  <label class="visually-hidden" for="nav-search">Что ищем?</label>
+                  <input type="search" class="nav-form search-form" name="nav-search" id="nav-search" placeholder="Что ищем?">
+                </form>
+              </div>
             </li>
-            <li>
+            <li class="navigation-item-login">
               <a class="user-navigation-button login-batton" href="#">Вход
                 <svg class="login-button-img" version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
                 	 width="21px" height="19px" viewBox="0 0 21 19" enable-background="new 0 0 21 19" xml:space="preserve">
@@ -61,6 +61,22 @@
                 		/>
                 </svg>
               </a>
+              <section class="navigation-login-form">
+                <h2 class="visually-hidden">Войти</h2>
+                <form class="login" method="get" action="https://echo.htmlacademy.ru">
+                  <label class="visually-hidden" for="login-login">Логин</label>
+                  <input type="email" class="nav-form login-form" name="login" id="login-login" placeholder="Электронная почта" required>
+
+                  <label class="visually-hidden" for="login-password">Пароль</label>
+                  <input type="password" class="nav-form password-form" name="password" id="login-password" placeholder="Пароль" required>
+
+                  <button class="button login-button" type="button">Войти</button>
+                  <p class="login-password-info">
+                    <a href="#">Забыли пароль?</a>
+                    <a href="#">Новая регистрация</a>
+                  <p>
+                </form>
+              </section>
             </li>
             <li class="user-navigation-cart">
               <a class="user-navigation-button cart-batton" href="#">
@@ -256,7 +272,7 @@
                   <span class="price">325</span><span class="kilo">/кг</span>
                 </p>
               </div>
-              <a class="main-link" href="catalog.html">Сливочное с брусничным джемом</a>
+              <a  class="catalog-item-link" href="catalog.html">Сливочное с брусничным джемом</a>
               <a class="button catalog-button" href="#">Быстрый просмотр</a>
             </li>
             <li class="catalog-item">
