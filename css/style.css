@@ -432,6 +432,7 @@ body.catalog-page {
   width: 241px;
   height: 44px;
 
+  box-sizing: border-box;
   border: solid 1px #d3d3d2;
   border-radius: 5px;
 
@@ -592,6 +593,11 @@ body.catalog-page {
   border: 0;
   background: url("../img/cross-small.svg") no-repeat 0 0;
   cursor: pointer;
+}
+
+.cart .price {
+  white-space: nowrap;
+  padding-right: 25px;
 }
 
 .cart-price {
@@ -1093,11 +1099,11 @@ body.catalog-page {
 .main-features-list {
   display: flex;
   flex-wrap: wrap;
-  justify-content: space-between;
+  justify-content: flex-start;
 
   padding: 0;
   margin: 0;
-  margin-right: 30px;
+  margin-right: 10px;
 
   list-style: none;
 }
@@ -1107,7 +1113,8 @@ body.catalog-page {
 
   width: 478px;
 
-  margin-left: 75px;
+  margin-left: 76px;
+  margin-right: 12px;
   margin-bottom: 22px;
 }
 
@@ -1119,8 +1126,8 @@ body.catalog-page {
   width: 49px;
   height: 49px;
 
-  top: -16px;
-  left: -54px;
+  top: -14px;
+  left: -57px;
 }
 
 .features-item-1::before {
@@ -1318,14 +1325,14 @@ body.catalog-page {
 }
 
 .map-info-phone {
-  margin-top: 17px;
+  margin-top: 20px;
   margin-bottom: 25px;
   margin-right: 105px;*
 }
 
 .main-map-info .phone {
     display: inline-block;
-    margin-top: 5px;
+    margin-top: 4px;
 }
 
 .map-info-button {
@@ -1830,7 +1837,8 @@ a.pagination-item-current {
   background-repeat: no-repeat;
 }
 
-.footer-copyright {
+.footer-copyright,
+.footer-copyright a {
   font-weight: 400;
   font-size: 12px;
   line-height: 18px;
@@ -1846,7 +1854,7 @@ a.pagination-item-current {
   margin: 0;
   padding: 0;
 
-  margin-left: 70px;
+  margin-left: 77px;
 }
 
 .footer-copyright img {
@@ -1914,6 +1922,8 @@ a.pagination-item-current {
 .modal-feedback input,
 .modal-feedback textarea {
   font: inherit;
+
+  box-sizing: border-box;
 
   background-color: #ffffff;
   border: 1px solid rgba(178, 178, 178, 0.52);
