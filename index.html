@@ -95,10 +95,10 @@
 
       </header>
 
-      <main class="container">
+      <main>
         <h1 class="visually-hidden">GllacyShop</h1>
 
-        <section class="main-slider">
+        <section class="main-slider container">
           <h2 class="visually-hidden">Слайдер</h2>
 
           <div class="slider-controls">
@@ -123,7 +123,7 @@
           </ul>
         </section>
 
-        <section class="banner">
+        <section class="banner container">
           <h2 class="visually-hidden">Специальные предложения</h2>
           <div class="banner-item raspberry">
             <h3>Малинка даром!</h3>
@@ -137,7 +137,7 @@
           </div>
         </section>
 
-        <section class="catalog">
+        <section class="catalog container">
           <h2 class="visually-hidden">Хиты</h2>
           <ul>
             <li class="main-catalog-item">
@@ -187,7 +187,7 @@
           </ul>
         </section>
 
-        <section class="main-features">
+        <section class="main-features container">
           <h2 class="visually-hidden">Особенности</h2>
           <h3>Магазин Глэйси — это онлайн- и офлайн-магазин по продаже мороженого собственного производства на развес</h3>
           <ul class="main-features-list">
@@ -210,7 +210,7 @@
           </ul>
         </section>
 
-        <div class="main-blog">
+        <div class="main-blog container">
           <h2 class="visually-hidden">Наш блог</h2>
           <section class="main-blog-item main-blog-preview">
             <h3>Новое в нашем блоге</h3>
@@ -233,6 +233,9 @@
 
         <section class="main-map">
           <h2 class="visually-hidden">Карта</h2>
+          <iframe src="https://yandex.ru/map-widget/v1/-/CBBe7YeFhB"
+            width="1200" height="430" allowfullscreen>
+          </iframe>
           <img src="img/map.jpg" width="1200" height="430" alt="Адрес главного офиса компании ул. Большая
             Конюшенная 19/8, Санкт-Петербург">
           <div class="main-map-info">
@@ -332,7 +335,7 @@
 
         <div class="footer-copyright">
           <a class="copyright-logo" href="https://htmlacademy.ru/intensive/htmlcss">
-            <img src="img/logo-htmlacademy-small.png" width="108" height="39" alt="Логотип HTML Academy">
+            <img src="img/logo-htmlacademy-small.svg" width="108" height="39" alt="Логотип HTML Academy">
           </a>
           <p class="copyright-info">
             Сделано в <a href="https://htmlacademy.ru/intensive/htmlcss">HTML Academy</a> &copy; 2017
@@ -347,21 +350,26 @@
         <form class="feedback" method="post" action="https://echo.htmlacademy.ru">
           <p>
             <label class="visually-hidden" for="feedback-login">Имя</label>
-            <input type="text" class="nav-form name-form" name="login" id="feedback-login" placeholder="Как вас зовут?" required>
+            <input type="text" class="nav-form name-form" name="login" id="feedback-login" placeholder="Как вас зовут?">
           </p>
           <p>
             <label class="visually-hidden" for="feedback-password">Адресс электронной почты</label>
-            <input type="email" class="nav-form password-form" name="password" id="feedback-password" placeholder="Ваша почта для ответа?" required>
+            <input type="email" class="nav-form email-form" name="email" id="feedback-password" placeholder="Ваша почта для ответа?">
           </p>
           <p>
             <label class="visually-hidden" for="feedback-question">Текст сообщения</label>
             <textarea class="nav-form question-form" name="question" id="feedback-question" placeholder="Напишите что-нибудь..."></textarea>
           </p>
-          <button class="button feedback-button" type="button">Отправить</button>
+          <button class="button feedback-button" type="submit">Отправить</button>
           <button class="modal-close" type="button">Закрыть</button>
         </form>
       </section>
+
       <div class="modal-overlay"></div>
+
     </div>
+
+    <script src="script.js"></script>
+
   </body>
 </html>
