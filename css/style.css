@@ -5,7 +5,7 @@ body {
   font-family: "Roboto", Arial, sans-serif;
   font-size: 16px;
   line-height: 22px;
-  font-weight: 700;
+  /* font-weight: 700; */
   color: #ffffff;
 }
 
@@ -330,6 +330,7 @@ body.catalog-page {
   display: inline-block;
 
   vertical-align: middle;
+  font-weight: 500;
   color: #ffffff;
 
   padding: 8px 17px;
@@ -771,6 +772,8 @@ body.catalog-page {
       -ms-flex-direction: column;
           flex-direction: column;
   align-items: flex-end;
+
+  font-weight: 700;
 }
 
 .navigation-info p {
@@ -822,6 +825,7 @@ body.catalog-page {
 .main-slider h3 {
   font-size: 60px;
   line-height: 60px;
+  font-weight: 700;
 
   width: 675px;
   margin: 0 auto;
@@ -949,6 +953,7 @@ body.catalog-page {
 .banner h3 {
   font-size: 35px;
   line-height: 41px;
+  font-weight: 700;
 
   margin: 0;
   margin-bottom: 15px;
@@ -959,6 +964,8 @@ body.catalog-page {
   margin: 0;
   margin-bottom: 15px;
   padding: 0;
+
+  font-weight: 700;
 }
 
 .banner-button {
@@ -1056,7 +1063,7 @@ body.catalog-page {
 }
 
 .catalog a {
-  font-weight: 400;
+  font-weight: 500;
   font-size: 16px;
   line-height: 22px;
 
@@ -1116,6 +1123,7 @@ body.catalog-page {
 
   font-size: 45px;
   line-height: 45px;
+  font-weight: 700;
 
   text-shadow: 0.5px 0.9px 3px rgba(49, 50, 53, 0.5);
 
@@ -1166,6 +1174,8 @@ body.catalog-page {
 .catalog-button {
   position: absolute;
   bottom: -60px;
+  left: 50%;
+  margin-left: -90px;
 
   padding-left: 17px;
   padding-right: 17px;
@@ -1314,6 +1324,8 @@ body.catalog-page {
 
   font-size: 24px;
   line-height: 30px;
+  font-weight: 700;
+
   color: #323232;
 }
 
@@ -2048,9 +2060,21 @@ a.pagination-item-current {
 
 /* ------------------ модальное окно ------------------ */
 
-@keyframes magic {
+/* @keyframes magic {
   from {
     opacity: 0;
+  }
+
+  to {
+    opacity: 1;
+  }
+} */
+
+@-webkit-keyframes magic {
+  from {
+    opacity: 0;
+    -webkit-transform: scale3d(0.3, 0.3, 0.3);
+    transform: scale3d(0.3, 0.3, 0.3);
   }
 
   to {
@@ -2059,11 +2083,6 @@ a.pagination-item-current {
 }
 
 @keyframes rotate {
-  /* 0%,
-  100% {
-    transform: rotate(0deg);
-  } */
-
   10%,
   30%,
   50%,
@@ -2087,13 +2106,14 @@ a.pagination-item-current {
 
 .modal-feedback {
   position: fixed;
-  top: 300px;
+  top: 50%;
   left: 50%;
 
   -webkit-box-sizing: border-box;
 
           box-sizing: border-box;
   margin-left: -240px;
+  margin-top: -220px;
   padding: 20px 25px;
   padding-bottom: 70px;
 
@@ -2227,9 +2247,18 @@ a.pagination-item-current {
   display: none;
 }
 
+.overlay-view {
+  display: block;
+}
+
 .modal-view {
   display: block;
 
   animation-name: magic;
-  animation-duration: 1s;
+  animation-duration: 0.7s;
+}
+
+.modal-error {
+  animation-name: rotate;
+  animation-duration: 0.8s;
 }

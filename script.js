@@ -11,14 +11,14 @@
   link.addEventListener("click", function (evt) {
     evt.preventDefault();
     feedback.classList.add("modal-view");
-    overlay.classList.add("modal-view");
+    overlay.classList.add("overlay-view");
     login.focus();
   });
 
   close.addEventListener("click", function (evt) {
     evt.preventDefault();
     feedback.classList.remove("modal-view");
-    overlay.classList.remove("modal-view");
+    overlay.classList.remove("overlay-view");
     feedback.classList.remove("modal-error");
   });
 
@@ -27,7 +27,7 @@
       evt.preventDefault();
       if (feedback.classList.contains("modal-view")) {
         feedback.classList.remove("modal-view");
-        overlay.classList.remove("modal-view");
+        overlay.classList.remove("overlay-view");
         feedback.classList.remove("modal-error");
       }
     }
