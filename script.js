@@ -37,8 +37,7 @@
     if (!login.value || !email.value) {
       evt.preventDefault();
       feedback.classList.remove("modal-error");
-      // feedback.offsetWidth = feedback.offsetWidth;
-      void feedback.offsetWidth;
+      feedback.offsetWidth = feedback.offsetWidth;
       feedback.classList.add("modal-error");
     } else {
       localStorage.setItem("login", login.value);

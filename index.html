@@ -4,8 +4,8 @@
     <meta charset="utf-8">
     <title>HTML Academy: Глейси</title>
     <link href="https://fonts.googleapis.com/css?family=Roboto:400,500,700" rel="stylesheet">
-    <link href="css/normalize.css" rel="stylesheet">
-    <link href="css/style.css" rel="stylesheet">
+    <link href="css/normalize-min.css" rel="stylesheet">
+    <link href="css/style-min.css" rel="stylesheet">
   </head>
   <body>
     <input class="visually-hidden" type="radio" id="switch-slide-1" name="switch" checked>
@@ -48,8 +48,8 @@
               </a>
               <div class="navigation-search-form">
                 <form class="search" method="get" action="https://echo.htmlacademy.ru">
-                  <label class="visually-hidden" for="nav-search">Что ищем?</label>
                   <input type="search" class="nav-form search-form" name="nav-search" id="nav-search" placeholder="Что ищем?">
+                  <label class="visually-hidden" for="nav-search">Что ищем?</label>
                 </form>
               </div>
             </li>
@@ -65,11 +65,11 @@
               <section class="navigation-login-form">
                 <h2 class="visually-hidden">Войти</h2>
                 <form class="login" method="get" action="https://echo.htmlacademy.ru">
-                  <label class="visually-hidden" for="login-login">Логин</label>
                   <input type="email" class="nav-form login-form" name="login" id="login-login" placeholder="Электронная почта" required>
+                  <label class="visually-hidden" for="login-login">Логин</label>
 
-                  <label class="visually-hidden" for="login-password">Пароль</label>
                   <input type="password" class="nav-form password-form" name="password" id="login-password" placeholder="Пароль" required>
+                  <label class="visually-hidden" for="login-password">Пароль</label>
 
                   <button class="button login-button" type="button">Войти</button>
                   <p class="login-password-info">
@@ -123,7 +123,6 @@
         </section>
 
         <section class="banner container">
-          <h2 class="visually-hidden">Специальные предложения</h2>
           <div class="banner-item raspberry">
             <h3>Малинка даром!</h3>
             <p>При покупке 2 кг любого фруктового мороженого, добавим в ваш заказ банку малинового варенья бесплатно.</p>
@@ -210,7 +209,6 @@
         </section>
 
         <div class="main-blog container">
-          <h2 class="visually-hidden">Наш блог</h2>
           <section class="main-blog-item main-blog-preview">
             <h3>Новое в нашем блоге</h3>
             <a href="#">10 способов сервировки фруктовых щербетов к столу</a>
@@ -222,8 +220,8 @@
               <p>Подпишитесь на нашу сладкую рассылку и будете всегда в курсе всего самого вкусного, что у нас
                 происходит. Обещаем не спамить и не слать всякой ненужной ерунды. Честно =)</p>
               <form class="login" method="get" action="https://echo.htmlacademy.ru">
-                <label class="visually-hidden" for="subscription-email">Адресс электронной почты</label>
                 <input type="email" class="nav-form subscription-form" name="subscription-email" id="subscription-email" placeholder="Электронная почта" required>
+                <label class="visually-hidden" for="subscription-email">Адресс электронной почты</label>
                 <button class="button subscription-button" type="button">Отправить</button>
               </form>
             </div>
@@ -342,22 +340,20 @@
         </div>
       </footer>
 
-    <!-- Всплывающие окна -->
-
       <section class="modal-feedback">
         <h2>Мы обязательно вам ответим!</h2>
         <form class="feedback" method="post" action="https://echo.htmlacademy.ru">
           <p>
-            <label class="visually-hidden" for="feedback-login">Имя</label>
             <input type="text" class="nav-form name-form" name="login" id="feedback-login" placeholder="Как вас зовут?">
+            <label class="visually-hidden" for="feedback-login">Имя</label>
           </p>
           <p>
-            <label class="visually-hidden" for="feedback-password">Адресс электронной почты</label>
             <input type="email" class="nav-form email-form" name="email" id="feedback-password" placeholder="Ваша почта для ответа?">
+            <label class="visually-hidden" for="feedback-password">Адресс электронной почты</label>
           </p>
           <p>
-            <label class="visually-hidden" for="feedback-question">Текст сообщения</label>
             <textarea class="nav-form question-form" name="question" id="feedback-question" placeholder="Напишите что-нибудь..."></textarea>
+            <label class="visually-hidden" for="feedback-question">Текст сообщения</label>
           </p>
           <button class="button feedback-button" type="submit">Отправить</button>
           <button class="modal-close" type="button">Закрыть</button>

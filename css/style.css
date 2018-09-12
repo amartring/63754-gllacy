@@ -5,11 +5,12 @@ body {
   font-family: "Roboto", Arial, sans-serif;
   font-size: 16px;
   line-height: 22px;
-  /* font-weight: 700; */
   color: #ffffff;
 }
 
-/* ------------------ кнопки ------------------ */
+body.catalog-page {
+  background-color: #849d8f;
+}
 
 .button {
   display: inline-block;
@@ -55,8 +56,6 @@ body {
           box-shadow: inset 0 2px 2px rgba(172, 16, 0, 1);
 }
 
-/* ------------------ скрытые элементы ------------------ */
-
 .visually-hidden:not(:focus):not(:active),
 input[type="checkbox"].visually-hidden,
 input[type="radio"].visually-hidden {
@@ -77,17 +76,10 @@ input[type="radio"].visually-hidden {
   overflow: hidden;
 }
 
-/* ------------------ центровщик ------------------ */
-body.catalog-page {
-  background-color: #849d8f;
-}
-
 .container {
   width: 1146px;
   margin: 0 auto;
 }
-
-/* ------------------  ------------------ */
 
 .main-header {
   margin-bottom: 275px;
@@ -559,7 +551,7 @@ body.catalog-page {
   height: 20px;
 
   left: 16px;
-  top: 7px;
+  top: 6px;
 
   background-image: url("../img/icon-header-basket.svg");
   background-repeat: no-repeat;
@@ -574,7 +566,7 @@ body.catalog-page {
   height: 20px;
 
   left: 16px;
-  top: 7px;
+  top: 6px;
 
   background-image: url("../img/icon-header-basket-red.svg");
   background-repeat: no-repeat;
@@ -700,7 +692,7 @@ body.catalog-page {
 }
 
 .catalog-page .main-header {
-  margin-bottom: 0px;
+  margin-bottom: 2px;
 }
 
 .catalog-page-menu {
@@ -728,7 +720,7 @@ body.catalog-page {
 .breadcrumbs li {
   position: relative;
 
-  margin-right: 20px;
+  margin-right: 21px;
 
   list-style: none;
 }
@@ -771,7 +763,9 @@ body.catalog-page {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  align-items: flex-end;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
 
   font-weight: 700;
 }
@@ -780,7 +774,7 @@ body.catalog-page {
   margin: 0;
   margin-left: auto;
   padding: 0;
-  padding-bottom: 5px;
+  padding-bottom: 4px;
 }
 
 .navigation-info a {
@@ -816,7 +810,6 @@ body.catalog-page {
   margin-bottom: 41px;
 
   position: relative;
-  /*padding-top: 321px;*/
 
   text-align: center;
   color: #ffffff;
@@ -971,7 +964,7 @@ body.catalog-page {
 .banner-button {
   position: absolute;
   right: 20px;
-  bottom: 26px;
+  bottom: 25px;
 
   padding-left: 23px;
   padding-right: 23px;
@@ -988,7 +981,7 @@ body.catalog-page {
 }
 
 .catalog-page .catalog {
-  margin-bottom: 40px;
+  margin-bottom: 42px;
 }
 
 .catalog ul {
@@ -1153,7 +1146,7 @@ body.catalog-page {
 .catalog-item-link {
   display: inline-block;
 
-  padding: 0 6px;
+  padding: 0 5px;
 
   max-width: 267px;
 
@@ -1205,7 +1198,7 @@ body.catalog-page {
   margin-bottom: 40px;
 
   min-width: 1146px;
-  min-height: 304px;
+  min-height: 306px;
 }
 
 .main-features h3 {
@@ -1366,7 +1359,7 @@ body.catalog-page {
           box-sizing: border-box;
   width: 368px;
 
-  padding: 12px 15px;
+  padding: 13px 14px;
 
   border-radius: 5px;
   background-color: #ffffff;
@@ -1480,7 +1473,7 @@ body.catalog-page {
 }
 
 .map-info-phone {
-  margin-top: 20px;
+  margin-top: 21px;
   margin-bottom: 25px;
   margin-right: 105px;
 }
@@ -1530,7 +1523,7 @@ body.catalog-page {
   line-height: 16px;
 
   margin: 0;
-  margin-bottom: 5px;
+  margin-bottom: 6px;
   padding: 0;
 }
 
@@ -1565,7 +1558,7 @@ body.catalog-page {
           box-sizing: border-box;
 
   margin: 0;
-  padding: 10px 15px;
+  padding: 9px 15px;
 
   background-color: rgba(255, 255, 255, 0.2);
   border-radius: 18.5px;
@@ -1611,7 +1604,7 @@ body.catalog-page {
   position: relative;
 
   margin: 0;
-  padding: 17px 22px;
+  padding: 16px 22px;
 
   background-color: rgba(255, 255, 255, 0.2);
   border-radius: 18.5px;
@@ -1634,7 +1627,7 @@ body.catalog-page {
 
 .range-toggle {
   position: absolute;
-  top: 9px;
+  top: 8px;
   width: 20px;
   height: 20px;
 
@@ -1674,7 +1667,7 @@ body.catalog-page {
   position: relative;
 
   padding-left: 32px;
-  padding-right: 17px;
+  padding-right: 18px;
 }
 
 .filter-additive li {
@@ -1844,13 +1837,13 @@ input[type="checkbox"]:not(:checked):disabled + label::before {
   min-width: 190px;
 
   margin-left: auto;
-  margin-bottom: 27px;
+  margin-bottom: 26px;
 }
 
 .catalog-pagination a {
   display: inline-block;
 
-  padding: 6px 10px;
+  padding: 5px 10px;
 
   font-weight: 500;
   font-size: 16px;
@@ -2009,7 +2002,7 @@ a.pagination-item-current {
 
 .footer-info-list {
   margin: 0;
-  margin-top: 14px;
+  margin-top: 12px;
   margin-right: 32px;
   padding: 0;
 }
@@ -2044,7 +2037,6 @@ a.pagination-item-current {
   color: #fefefe;
 
   width: 267px;
-  /* padding-left: 80px; */
 }
 
 .footer-copyright p {
@@ -2058,18 +2050,6 @@ a.pagination-item-current {
   margin-left: 78px;
 }
 
-/* ------------------ модальное окно ------------------ */
-
-/* @keyframes magic {
-  from {
-    opacity: 0;
-  }
-
-  to {
-    opacity: 1;
-  }
-} */
-
 @-webkit-keyframes magic {
   from {
     opacity: 0;
@@ -2082,26 +2062,49 @@ a.pagination-item-current {
   }
 }
 
-@keyframes rotate {
+@-webkit-keyframes rotate {
   10%,
   30%,
   50%,
   70%,
   90% {
-    transform: rotate(-3deg);
+    -webkit-transform: rotate(-3deg);
+            transform: rotate(-3deg);
   }
 
   20%,
   40%,
   60%,
   80% {
-    transform: rotate(3deg);
+    -webkit-transform: rotate(3deg);
+            transform: rotate(3deg);
+  }
+}
+
+@keyframes rotate {
+  10%,
+  30%,
+  50%,
+  70%,
+  90% {
+    -webkit-transform: rotate(-3deg);
+            transform: rotate(-3deg);
+  }
+
+  20%,
+  40%,
+  60%,
+  80% {
+    -webkit-transform: rotate(3deg);
+            transform: rotate(3deg);
   }
 }
 
 .modal-error {
-  animation-name: rotate;
-  animation-duration: 1s;
+  -webkit-animation-name: rotate;
+          animation-name: rotate;
+  -webkit-animation-duration: 0.8s;
+          animation-duration: 0.8s;
 }
 
 .modal-feedback {
@@ -2150,8 +2153,7 @@ a.pagination-item-current {
 }
 
 .modal-feedback textarea {
-  padding-left: 15px;
-  padding-top: 10px;
+  padding: 10px 15px;
 
   width: 413px;
   height: 145px;
@@ -2254,11 +2256,24 @@ a.pagination-item-current {
 .modal-view {
   display: block;
 
-  animation-name: magic;
-  animation-duration: 0.7s;
+  -webkit-animation-name: magic;
+
+          animation-name: magic;
+  -webkit-animation-duration: 0.7s;
+          animation-duration: 0.7s;
 }
 
 .modal-error {
-  animation-name: rotate;
-  animation-duration: 0.8s;
+  -webkit-animation-name: rotate;
+          animation-name: rotate;
+  -webkit-animation-duration: 0.8s;
+          animation-duration: 0.8s;
+}
+
+.navigation-search-form input:focus + label,
+.navigation-login-form input:focus + label,
+.main-subscription input:focus + label,
+.modal-feedback input:focus + label,
+.modal-feedback textarea:focus + label {
+  display: none;
 }
