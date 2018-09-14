@@ -2,11 +2,9 @@
   var feedback = document.querySelector(".modal-feedback");
   var overlay = document.querySelector(".modal-overlay");
   var close = feedback.querySelector(".modal-close");
-
   var form = feedback.querySelector(".feedback");
   var login = feedback.querySelector(".name-form");
   var email = feedback.querySelector(".email-form");
-  // var question = feedback.querySelector(".question-form");
 
   link.addEventListener("click", function (evt) {
     evt.preventDefault();
