@@ -154,6 +154,7 @@ input[type="radio"].visually-hidden {
   line-height: 18px;
   padding: 7px 14px;
   color: #ffffff;
+  vertical-align: middle;
 }
 
 .site-navigation .navigation-button:hover,
@@ -356,11 +357,11 @@ input[type="radio"].visually-hidden {
   z-index: 10;
 }
 
-.user-navigation .login-batton {
+.user-navigation .menu-login-button {
   padding-left: 44px;
 }
 
-.login-batton svg.login-button-img {
+.menu-login-button svg.login-button-img {
   position: absolute;
   width: 21px;
   height: 19px;
@@ -368,15 +369,15 @@ input[type="radio"].visually-hidden {
   top: 6px;
 }
 
-.login-batton:focus,
-.login-batton:hover {
+.menu-login-button:focus,
+.menu-login-button:hover {
   background-color: #f8f7f4;
 }
 
-.login-batton:focus path,
-.login-batton:hover path,
-.login-batton:focus polygon,
-.login-batton:hover polygon {
+.menu-login-button:focus path,
+.menu-login-button:hover path,
+.menu-login-button:focus polygon,
+.menu-login-button:hover polygon {
   fill: #000000;
 }
 
@@ -453,27 +454,27 @@ input[type="radio"].visually-hidden {
   border-radius: 22px;
 }
 
-.user-navigation a.cart-batton,
-.user-navigation a.cart-batton:hover,
-.user-navigation a.cart-batton:focus {
+.user-navigation a.cart-button,
+.user-navigation a.cart-button:hover,
+.user-navigation a.cart-button:focus {
   padding-left: 44px;
   color: #ffffff;
 }
 
-.catalog-page a.cart-batton,
-.catalog-page a.cart-batton:hover,
-.catalog-page a.cart-batton:focus {
+.catalog-page a.cart-button,
+.catalog-page a.cart-button:hover,
+.catalog-page a.cart-button:focus {
   color: #323232;
 }
 
-.catalog-page .cart-batton {
+.catalog-page .cart-button {
   padding-left: 44px;
   color: #323232;
   text-decoration: none;
   background-color: rgba(248, 247, 244, 0.99);
 }
 
-.cart-batton::before {
+.cart-button::before {
   content: "";
   position: absolute;
   width: 21px;
@@ -485,7 +486,7 @@ input[type="radio"].visually-hidden {
   background-position: 0 0;
 }
 
-.catalog-page .cart-batton::before {
+.catalog-page .cart-button::before {
   content: "";
   position: absolute;
   width: 21px;
@@ -849,11 +850,15 @@ input[type="radio"].visually-hidden {
 }
 
 .raspberry {
-  background: url(../img/bcg-raspberry.jpg) no-repeat;
+  background-color: #ab3556;
+  background-image: url(../img/bcg-raspberry.jpg);
+  background-repeat: no-repeat;
 }
 
 .chocolate {
-  background: url(../img/bcg-chocolate.jpg) no-repeat;
+  background-color: #654231;
+  background-image: url(../img/bcg-chocolate.jpg);
+  background-repeat: no-repeat;
 }
 
 .catalog-page .catalog {
@@ -999,6 +1004,7 @@ input[type="radio"].visually-hidden {
   padding: 0 5px;
   max-width: 267px;
   text-align: center;
+  vertical-align: middle;
   z-index: 3;
 }
 
@@ -1034,7 +1040,8 @@ input[type="radio"].visually-hidden {
 .main-features {
   color: #323232;
   font-weight: 400;
-  background: url(../img/bcg-waffle.jpg);
+  background-color: #ece1c8;
+  background-image: url(../img/bcg-waffle.jpg);
   border-radius: 15px;
   margin-bottom: 40px;
   min-width: 1146px;
@@ -1142,6 +1149,7 @@ input[type="radio"].visually-hidden {
   line-height: 30px;
   font-weight: 700;
   color: #323232;
+  vertical-align: middle;
 }
 
 .main-subscription {
@@ -1280,7 +1288,7 @@ input[type="radio"].visually-hidden {
   line-height: 24px;
 }
 
-.map-info-adress {
+.map-info-address {
   margin-top: 28px;
   margin-right: 25px;
 }
@@ -1294,6 +1302,7 @@ input[type="radio"].visually-hidden {
 .main-map-info .phone {
   display: inline-block;
   margin-top: 4px;
+  vertical-align: middle;
 }
 
 .map-info-button {
@@ -1517,23 +1526,23 @@ input[type="radio"]:checked + label::after {
   border-radius: 50%;
 }
 
-input[type="radio"]:hover + label::before,
-input[type="radio"]:focus + label::before {
+.filter-input-radio:hover + label::before,
+.filter-input-radio:focus + label::before {
   border: 3px solid #ffffff;
 }
 
-input[type="radio"]:hover + label::after,
-input[type="radio"]:focus + label::after {
+.filter-input-radio:hover + label::after,
+.filter-input-radio:focus + label::after {
   border: 3px solid #ffffff;
   background-color: #ffffff;
 }
 
-input[type="radio"]:disabled + label::before,
-input[type="radio"]:disabled + label::after {
+.filter-input-radio:disabled + label::before,
+.filter-input-radio:disabled + label::after {
   border: 3px solid rgba(255, 255, 255, 0.4);
 }
 
-input[type="checkbox"]:not(:checked) + label::before {
+.filter-input-checkbox:not(:checked) + label::before {
   content: "";
   position: absolute;
   top: -1px;
@@ -1545,7 +1554,7 @@ input[type="checkbox"]:not(:checked) + label::before {
   background: url("../img/checkbox-off.svg") no-repeat 0 0;
 }
 
-input[type="checkbox"]:checked + label::before {
+.filter-input-checkbox:checked + label::before {
   content: "";
   position: absolute;
   top: -1px;
@@ -1557,21 +1566,21 @@ input[type="checkbox"]:checked + label::before {
   background: url("../img/checkbox-on.svg") no-repeat 0 0;
 }
 
-input[type="checkbox"]:not(:checked):hover + label::before,
-input[type="checkbox"]:not(:checked):focus + label::before {
+.filter-input-checkbox:not(:checked):hover + label::before,
+.filter-input-checkbox:not(:checked):focus + label::before {
   background: url("../img/checkbox-off-hover.svg") no-repeat 0 0;
 }
 
-input[type="checkbox"]:not(:checked):disabled + label::before {
+.filter-input-checkbox:not(:checked):disabled + label::before {
   background: url("../img/checkbox-off-disabled.svg") no-repeat 0 0;
 }
 
-input[type="checkbox"]:hover + label::before,
-input[type="checkbox"]:focus + label::before {
+.filter-input-checkbox:hover + label::before,
+.filter-input-checkbox:focus + label::before {
   background: url("../img/checkbox-on-hover.svg") no-repeat 0 0;
 }
 
-input[type="checkbox"]:checked:disabled + label::before {
+.filter-input-checkbox:checked:disabled + label::before {
   background: url("../img/checkbox-on-disabled.svg") no-repeat 0 0;
 }
 
@@ -1744,7 +1753,7 @@ a.pagination-item-current {
 
 .footer-social .social-button {
   display: inline-block;
-
+  vertical-align: middle;
   width: 32px;
   height: 32px;
 }
@@ -1828,6 +1837,17 @@ a.pagination-item-current {
 }
 
 @-webkit-keyframes magic {
+  from {
+    opacity: 0;
+    -webkit-transform: scale3d(0.3, 0.3, 0.3);
+    transform: scale3d(0.3, 0.3, 0.3);
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes magic {
   from {
     opacity: 0;
     -webkit-transform: scale3d(0.3, 0.3, 0.3);

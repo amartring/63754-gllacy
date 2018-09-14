@@ -11,15 +11,12 @@
     <input class="visually-hidden switch-slide-1" type="radio" id="switch-slide-1" name="switch" checked>
     <input class="visually-hidden switch-slide-2" type="radio" id="switch-slide-2" name="switch">
     <input class="visually-hidden switch-slide-3" type="radio" id="switch-slide-3" name="switch">
-
     <div class="site-wrapper">
       <header class="main-header container">
-
         <nav class="main-navigation">
           <a class="main-header-logo">
             <img src="img/logo-gllacy.svg" width="154" height="64" alt="Логотип GllacyShop">
           </a>
-
           <ul class="site-navigation">
             <li class="site-navigation-catalog">
               <a class="navigation-button" href="catalog.html">Каталог</a>
@@ -34,7 +31,6 @@
             <li><a class="navigation-button" href="#">Доставка и оплата</a></li>
             <li><a class="navigation-button" href="#">О Компании</a></li>
           </ul>
-
           <ul class="user-navigation">
             <li class="navigation-item-search">
               <a class="user-navigation-button search-button" href="#">
@@ -53,7 +49,7 @@
               </div>
             </li>
             <li class="navigation-item-login">
-              <a class="user-navigation-button login-batton" href="#">Вход
+              <a class="user-navigation-button menu-login-button" href="#">Вход
                 <svg class="login-button-img" x="0px" y="0px" width="21px" height="19px" viewBox="0 0 21 19" enable-background="new 0 0 21 19" xml:space="preserve">
                 	<polygon fill="#FFFFFF" points="6,14.875 12.917,9.5 6,4.125 6,7.042 -0.042,7.042 -0.042,11.959 6,11.959 	"/>
                 	<path fill="#FFFFFF" d="M18,0H5C3.9,0,3,0.9,3,2v2h2V2h13v15H5v-2H3v2c0,1.1,0.9,2,2,2h13c1.1,0,2-0.9,2-2V2C20,0.9,19.1,0,18,0z"/>
@@ -64,11 +60,9 @@
                 <form class="login" method="get" action="https://echo.htmlacademy.ru">
                   <input type="email" class="nav-form login-form" name="login" id="login-login" placeholder="Электронная почта" required>
                   <label class="visually-hidden" for="login-login">Логин</label>
-
                   <input type="password" class="nav-form password-form" name="password" id="login-password" placeholder="Пароль" required>
                   <label class="visually-hidden" for="login-password">Пароль</label>
-
-                  <button class="button login-button" type="button">Войти</button>
+                  <button class="button login-button" type="submit">Войти</button>
                   <p class="login-password-info">
                     <a href="#">Забыли пароль?</a>
                     <a href="#">Новая регистрация</a>
@@ -77,32 +71,26 @@
               </section>
             </li>
             <li>
-              <a class="user-navigation-button cart-batton" href="#">
+              <a class="user-navigation-button cart-button" href="#">
                 <span class="visually-hidden">Корзина</span>Пусто
               </a>
             </li>
           </ul>
         </nav>
-
         <div class="navigation-info">
           <p class="navigation-info-time">С 10 до 20, ежедневно</p>
           <a class="navigation-info-phone" href="tel:+78124502525">8 812 450-25-25</a>
         </div>
-
       </header>
-
       <main>
         <h1 class="visually-hidden">GllacyShop</h1>
-
         <section class="main-slider container">
           <h2 class="visually-hidden">Слайдер</h2>
-
           <div class="slider-controls">
             <label for="switch-slide-1">Первый</label>
             <label for="switch-slide-2">Второй</label>
             <label for="switch-slide-3">Третий</label>
           </div>
-
           <ul class="slider-list">
             <li class="slider-item slide slide-1" id="slide-1">
               <h3>Крем-брюле и пломбир с малиновым джемом</h3>
@@ -118,7 +106,6 @@
             </li>
           </ul>
         </section>
-
         <section class="banner container">
           <div class="banner-item raspberry">
             <h3>Малинка даром!</h3>
@@ -131,7 +118,6 @@
             <a class="button banner-button" href="catalog.html">Хочу шоколадки!</a>
           </div>
         </section>
-
         <section class="catalog container">
           <h2 class="visually-hidden">Хиты</h2>
           <ul>
@@ -181,7 +167,6 @@
             </li>
           </ul>
         </section>
-
         <section class="main-features container">
           <h2 class="visually-hidden">Особенности</h2>
           <h3>Магазин Глэйси — это онлайн- и офлайн-магазин по продаже мороженого собственного производства на развес</h3>
@@ -204,13 +189,11 @@
             </li>
           </ul>
         </section>
-
         <div class="main-blog container">
           <section class="main-blog-item main-blog-preview">
             <h3>Новое в нашем блоге</h3>
             <a href="#">10 способов сервировки фруктовых щербетов к столу</a>
           </section>
-
           <section class="main-blog-item main-subscription">
             <div class="main-subscription-background">
               <h3 class="visually-hidden">Подписка</h3>
@@ -219,12 +202,11 @@
               <form class="login" method="get" action="https://echo.htmlacademy.ru">
                 <input type="email" class="nav-form subscription-form" name="subscription-email" id="subscription-email" placeholder="Электронная почта" required>
                 <label class="visually-hidden" for="subscription-email">Адресс электронной почты</label>
-                <button class="button subscription-button" type="button">Отправить</button>
+                <button class="button subscription-button" type="submit">Отправить</button>
               </form>
             </div>
           </section>
         </div>
-
         <section class="main-map">
           <h2 class="visually-hidden">Карта</h2>
           <iframe src="https://yandex.ru/map-widget/v1/-/CBBqrGV60A">
@@ -233,7 +215,7 @@
           <img src="img/map.jpg" width="1200" height="430" alt="Адрес главного офиса компании ул. Большая
             Конюшенная 19/8, Санкт-Петербург">
           <div class="main-map-info">
-            <p class="map-info-adress">
+            <p class="map-info-address">
               Адресс главного офиса <br> и офлайн магазина:<br>
               <span>ул. Большая Конюшенная<br>
               19/8, Санкт-Петербург</span>
@@ -247,10 +229,8 @@
           </div>
         </div>
         </section>
-
       </main>
       <footer class="main-footer container">
-
         <ul class="footer-social">
           <li>
             <a class="social-button social-tw" href="#">
@@ -302,7 +282,7 @@
               		h0.264c1.014,0,1.74-0.003,2.18-0.009c0.438-0.007,0.843-0.088,1.212-0.245c0.377-0.157,0.633-0.364,0.774-0.625
               		s0.214-0.562,0.214-0.9c0-0.446-0.088-0.788-0.261-1.03C18.825,17.386,18.531,17.204,18.118,17.084z"/>
               	<path fill="#FFFFFF" d="M16,0C7.164,0,0,7.164,0,16c0,8.837,7.164,16,16,16c8.837,0,16-7.163,16-16C32,7.164,24.837,0,16,0z
-              		 M22.602,20.531c-0.273,0.533-0.646,0.976-1.124,1.327c-0.552,0.415-1.161,0.71-1.823,0.886s-1.501,0.264-2.519,0.264h-6.121V8.987
+              		M22.602,20.531c-0.273,0.533-0.646,0.976-1.124,1.327c-0.552,0.415-1.161,0.71-1.823,0.886s-1.501,0.264-2.519,0.264h-6.121V8.987
               		h5.443c1.13,0,1.957,0.038,2.48,0.113c0.524,0.076,1.045,0.242,1.561,0.5c0.533,0.27,0.929,0.632,1.189,1.087
               		c0.26,0.455,0.392,0.975,0.392,1.558c0,0.678-0.179,1.278-0.536,1.795c-0.358,0.518-0.863,0.92-1.517,1.208v0.075
               		c0.917,0.182,1.642,0.559,2.179,1.13c0.537,0.571,0.807,1.325,0.807,2.261C23.013,19.392,22.875,19.997,22.602,20.531z"/>
@@ -310,7 +290,6 @@
             </a>
           </li>
         </ul>
-
         <div class="footer-info">
           <ul class="footer-info-list">
             <li><a class="info-link current" href="#">Для поставщиков</a></li>
@@ -321,7 +300,6 @@
             <li><a class="info-link" href="#">Экологические стандарты</a></li>
           </ul>
         </div>
-
         <div class="footer-copyright">
           <a class="copyright-logo" href="https://htmlacademy.ru/intensive/htmlcss">
             <img src="img/logo-htmlacademy-small.png" width="108" height="39" alt="Логотип HTML Academy">
@@ -331,7 +309,6 @@
           </p>
         </div>
       </footer>
-
       <section class="modal-feedback">
         <h2>Мы обязательно вам ответим!</h2>
         <form class="feedback" method="post" action="https://echo.htmlacademy.ru">
@@ -351,12 +328,8 @@
           <button class="modal-close" type="button">Закрыть</button>
         </form>
       </section>
-
       <div class="modal-overlay"></div>
-
     </div>
-
     <script src="js/script-min.js"></script>
-
   </body>
 </html>
